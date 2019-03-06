@@ -1,7 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Lora" rel="stylesheet');
 html {
     height: 100%;
-    background-color: #000;
+    background-color: #141414;
     font-family: 'Montserrat', sans-serif;
+    body {
+        margin: 0;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        cursor: -webkit-image-set(url(./assets/normal1x.png) 1x, url(./assets/normal2x.png) 2x) 0 0, pointer;
+        &::after {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            z-index: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
 }
